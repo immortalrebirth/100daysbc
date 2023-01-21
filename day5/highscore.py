@@ -1,15 +1,13 @@
 # 🚨 Don't change the code below 👇
-student_heights = input("Input a list of student heights ").split()
-for n in range(0, len(student_heights)):
-  student_heights[n] = int(student_heights[n])
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
 # 🚨 Don't change the code above 👆
 
-
 #Write your code below this row 👇
-total = 0
-totalheight=0
-for student_height in student_heights:
-    total += 1
-    totalheight += student_height
-average = totalheight / total
-print(round(average))
+highscore=0
+for score in student_scores:
+    if score > highscore:
+        highscore = score
+print(f"The highest score in the class is: {highscore}")
