@@ -1,6 +1,7 @@
 #Step 5
 #delete line 3 and clear () in line 31 if you cannot utilize the clear function
-from replit import clear
+#used below if using replit, otherwise, keep the code from running
+#from replit import clear
 from hangman_art import logo
 import random
 print(logo)
@@ -28,7 +29,8 @@ for _ in range(word_length):
 guess_list = []
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-    clear()
+    #use below with replit, otherwise keep the code from running
+    #clear()
     if guess in guess_list:
       print("You already guessed this! Try again.")
 
